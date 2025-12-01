@@ -312,9 +312,15 @@
   }
 
   .scrolled .partners {
-    background: white;
-    top: 5rem;      /* light mode */
+  background: white;
+  top: 3rem; /* default for phones */
+}
+
+@media (min-width: 1024px) {
+  .scrolled .partners {
+    top: 5rem; /* large screens */
   }
+}
   /*.animate-scroll {
     animation: scroll-left 20s linear infinite;
   }*/
